@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Crud MCeTS</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <a href="https://antonyur.com/" target="_blank">
+          <img src="./img/Logo-mcets.svg" alt="">
+        </a>
+        <div>
+          <button id="crear" class="btn open-modal">Agregar Usuario</button>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="list-container">
+      <div class="text-container">
+        <h2>Lista de usuarios</h2>
+        <p><span>0 </span>Usuarios </p>
+      </div>
+      
+      <div class="list-items">
+        <div class="user">
+          <p>Antony Ureta Acuña</p>
+          <p>24 años</p>
+          <p>75552715</p>
+          <p>Perú</p>
+          <div class="icons">
+            <i class="far fa-edit"></i>
+            <i class="far fa-trash-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL -->
+  <div class="windows-modal">
+    <div class="modal-container close">
+      <p>
+        Añadir Usuario
+        <button class="close-modal">X</button>
+      </p>
+      <form action="" class="inputs">
+        <div>
+          <input class="medio" type="text" placeholder="Nombre" required/>
+          <input class="medio" type="text" placeholder="Apellido"/>
+        </div>
+        <div>
+          <input type="text" placeholder="Edad" />
+          <input type="number" placeholder="Dni" />
+          <select name="country">
+            <option value=" ">País</option>
+            <option>Perú</option>
+            <option>Argentina</option>
+            <option>México</option>
+            <option>Usa</option>
+          </select>
+        </div>
+        <div class="send">
+          <button type="button" class="btn">Aceptar</button>
+          <button type="button" class="btn">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- FIN DE MODAL AÑADIR USUARIO -->
+  <!--MODAL BORRAR-->
+  <div class="modal-delete">
+    <div class="modal">
+    <h2>¡Alerta!</h2>
+    <p>¿Estas seguro que quieres eliminar?</p>
+    <div class="send">
+      <button class="btn">Aceptar</button>
+      <button class="btn">Cancelar</button>
+    </div>
+  </div>
+  <!-- FIN DE MODAL BORRAR -->
+</body>
+</html>
